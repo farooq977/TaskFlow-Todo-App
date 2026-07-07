@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+body{
+	font-family: 'RocknRoll One', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #6666;
+}
+
+.main-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	/*background-color: #6666;*/
+	position: relative;
+}
+.main-container .mode{
+	position: absolute;
+	top:0;
+	right:10px;
+}
+.container{
+	background-color: #6666;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.section{
+	background-color: #e5e5e5;
+	height: 300px;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 5px; 
+	margin: 20px;
+	overflow: auto;
+}
+.head-manu{
+	background-color:#fdfd;
+	margin-bottom: 5px;
+	border-radius: 2px;
+	font-size: 12px;
+	overflow: auto;
+	width: 100%; 
+}
+.table-head{
+	width: 100%;
+}
+.table-head th{
+	padding: 12px;
+	text-align: center;
+}
+.table-head td{
+	background-color: #fff;
+	padding: 8px;
+	text-align: center;
+}
+.add-todo{
+	background-color:#6666;
+	width: 100%;
+}
+.back-todo{
+	text-align: -webkit-center;
+}
+
+.back-todo label{
+	margin: 5px;
+}
+/*form*/
+.add-form{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #e5e5e5;
+	padding: 20px;
+	width: 80%;
+	margin: 20px;
+
+}
+.add-form select{
+	width: 210px;
+	height: 40px;
+	padding: 5px;
+	border: 1px solid #6666;
+	border-radius: 3px;
+}
+
+.add-form input{
+	margin: 5px;
+	height: 30px;
+	width: 198px;
+	border-radius: 3px;
+	border: 1px solid #6666;
+	padding: 5px;
+}
+.form-btn{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+}
+.form-btn button{
+	height: 30px;
+	width:100px;
+	font-size: 15px;
+	border-radius: 5px;
+	border:none;
+	font-weight: bold;
+}
+.submit{
+	background-color: #0999f9;
+	color: #fff;
+}
+.clear{
+	background-color:#00992d;
+	color: #fff;
+}
+@media only screen and (max-width: 960px) {
+	.add-form{
+		flex-direction: column;
+	}
+}
+
+/*Slider*/
+.rating {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.rating::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: green;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.rating::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/*rating */
+.checked{
+	color: blue;
+}
+
+.dark-mode {
+  background-color: black;
+}
+.changeMode{
+	color: #fff;
+}
+.trash{
+	color: green;
+}
+.moon{
+	color: #000;
+}
+.back_link{
+	position: absolute;
+	top:0;
+	left: 15px;
+	height: 10px;
+}
+.back_link a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #000;
+}
+#Error{
+	color: #aa0000;
+}
